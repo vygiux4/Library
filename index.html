@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="butcont">
+            <button id="displaybook" onclick="displayForm()" class="input">Add book</button>
+        </div>
+    </div>
+    <div id="header" class="header">
+        <div class="headerinside">Hello this is a header</div>
+    </div>
+<div id="bookingcontainer" class="bookscontainer"  >
+    <div id="booking"  class="book" style="display: none;" >
+        <div id="alltexts" class="alltexts">
+            <div id="text1" class="text1 alo">Author:</div>
+            <div id="text2" class="text2 alo">Title:</div>
+            <div id="text3" class="text3 alo">Page Count:</div>
+            <div  id="text4"  class="text4 alo">Read:</div>
+            <div class="butockcont">
+                <button onclick="deletoBook()" id="delete">Delete</button>
+                <button id="hi" onclick="readToggle(this) ">Read</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <div id="former" class="formcontainer">
+      <form>
+          <ul>
+              <li>
+                  <div class="authorcont">
+                      <label for="author">Author Name</label>
+                      <input type="text" id="author" name="author">
+                  </div>
+              </li>
+              <li>
+                  <div class="titlecont">
+                      <label for="title">Title</label>
+                      <input type="text" id="title" name="title">
+                  </div>
+              </li>
+              <li>
+                  <div class="pagecont">
+                      <label for="pages">Pages Read</label>
+                      <input type="number" id="pages" name="pages">
+                  </div>
+              </li>
+              <li>
+                  <div class="readcont">
+                      <label for="reader">Finished Reading</label>
+                      <input type="checkbox" id="reader" name="ready">
+                  </div>
+              </li>
+              <li>
+                 <label for="submit"></label>
+                 <button type="button" id="submiti" > Submit
+              </li>
+          </ul>
+      </form>
+  </div>
+
+       
+        
+      
+   
+    <script src="java.js"></script>
+</body>
+</html>

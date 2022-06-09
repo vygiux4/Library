@@ -1,0 +1,146 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 1400px;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.533);
+    background-color: rgb(255, 255, 255);
+   
+    grid-row: 1/2;
+    height: 100px;
+}
+.sidebar {
+    display: grid;
+    background-color: rgb(15, 178, 228);
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.533);
+    align-items: flex-start;
+     grid-row: 1/3;
+     grid-column: 1/2;
+     height: 100vh;
+   
+    
+}
+.butcont {
+    
+   display: flex;
+    align-items: center;
+justify-content: center;
+height: 50px;
+width: 300px;
+margin-top: 50px;
+
+
+
+
+}
+#displaybook {
+    width: 200px;
+    height: 100px;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.533);
+}
+
+
+#bamb {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width:1500x;
+    height: 777px;
+    grid-template-columns: repeat(auto-fill);
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    grid-auto-flow: column;
+    overflow-y: auto;
+    background-color: rgb(207, 207, 207);
+    grid-gap:30px;
+
+}
+
+.book {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+      padding-left: 30px;
+      padding-right: 30px;
+    background: rgb(255, 255, 255);
+    height: 300px;
+    width: 200px;
+    border: 5px solid black;
+    font-weight: bolder;
+    justify-content: center;
+    content: 'title'
+
+}
+.alo{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.formcontainer {
+     display: none;
+    align-items: center;
+    position:absolute;
+    left: 800px;
+     bottom: 300px;
+    width: 300px;
+    height: 380px;
+    background-color: rgb(56, 144, 185);
+    border-radius: 5px;
+    
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+     padding-bottom: 20px;
+    list-style-type: none; 
+    height: 50px;
+     
+}
+.titlecont {
+    display: flex;
+    flex-direction: column;
+    width: 185px;
+}
+
+ul {
+    padding-left: 55px;
+   
+}
+
+#submiti {
+    width: 80px;
+}
+
+.butockcont {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.alltexts {
+    width: 200px;
+}
+#displaybook {
+    background-color: rgba(36, 28, 39, 0.171);
+    border-radius: 20px;
+    color: white;
+    border: 0;
+}
+
+#inputform {
+    padding-top: 20px;
+    align-items: center;
+    padding-left: 10px;
+    
+}
