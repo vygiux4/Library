@@ -23,8 +23,9 @@
             <div id="text2" class="text2 alo">Title:</div>
             <div id="text3" class="text3 alo">Page Count:</div>
             <div  id="text4"  class="text4 alo">Read:</div>
-            <div class="butockcont">
-                <button onclick="deletoBook()" id="delete">Delete</button>
+            <div class="butockcont" id="buttoncont">
+            <button class="deleto" onclick="deleto(this)" data-index="${index}">Delete</button>
+               
                 <button id="hi" onclick="readToggle(this) ">Read</button>
             </div>
         </div>

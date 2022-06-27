@@ -99,9 +99,10 @@ function displayForm() {
 }
 
 // Delete a book from display 
-
-function deletoBook() {
- document.getElementById('card0').remove()
+ 
+function deleto(obj) {
+    
+    obj.parentNode.parentNode.parentNode.remove()
 }
 
 
@@ -117,13 +118,12 @@ function addBookToLibrary() {
          
        
     let el = document.createElement('div')
-    
     el.classList.add('book')
 
     document.getElementById('text1').textContent = ('Author:'+' '+ knyga.author)
     document.getElementById('text2').textContent = ('Title:' + ' ' + knyga.title)
     document.getElementById('text3').textContent = ('Page count:' + ' ' + knyga.pages)
-    document.getElementById('text4').textContent = ('Read:' + ' ' + knyga.read)
+     document.getElementById('text4').textContent = ('Read:' + ' ' + knyga.read)
 
      bookcontainer.appendChild(el)
 
